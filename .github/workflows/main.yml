@@ -13,7 +13,7 @@ jobs:
       with:
         repository: stenjo/privateaction
         token: ${{ secrets.REPO_KEY }}
-        path: .gihub/actions
+        path: .github/actions
 
     - run: ls -al
     - uses: ./.github/actions/privateaction
