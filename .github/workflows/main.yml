@@ -12,9 +12,9 @@ jobs:
       with:
         repository: stenjo/privateaction
         token: ${{ secrets.REPO_TOKEN}}
-        path: ./gihub/actions
+        path: .gihub/actions
 
-    - uses: .github/actions/privateaction
+    - uses: ./.github/actions/privateaction
 
     - name: Testing siesta
       run: puppeteer
