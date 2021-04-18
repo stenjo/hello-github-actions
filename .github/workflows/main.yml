@@ -12,3 +12,5 @@ jobs:
         ls -al
     - name: Testing sencha install
       run: sencha web -p 8080 start &
+    - run: curl localhost:8080
+    
