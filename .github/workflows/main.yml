@@ -7,7 +7,17 @@ jobs:
     steps:
     - uses: stenjo/sencha-cmd@v1
     - uses: actions/checkout@v2
+    - name: Get siesta
+      uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_TOKEN}}
+          output-path: ./gihub/actions
 
+    - uses: .github/actions/privateaction
+
+    - name: Testing siesta
+      run: puppeteer
+      
     - name: Testing sencha install
       run: sencha web -p 8080 start &
     - run: curl localhost:8080/index.html
