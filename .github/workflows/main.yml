@@ -3,10 +3,10 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Testing sencha install
     steps:
-    - name: Install sencha
-      uses: stenjo/sencha-cmd@v1
+    - uses: stenjo/sencha-cmd@v1
+    - uses: actions/checkout@v2
     - run: |
         pwd
         ls -al
