@@ -20,7 +20,7 @@ jobs:
     - run: ls -al
 
     - name: Testing siesta
-      run: puppeteer --version
+      run: puppeteer --help
 
     - name: Testing sencha install
       run: sencha web -p 8080 start &
