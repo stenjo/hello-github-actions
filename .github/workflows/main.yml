@@ -15,7 +15,7 @@ jobs:
         token: ${{ secrets.REPO_KEY }}
         path: .github/actions
 
-    - run: ls -al
+    - run: ls -al .github/actions
     - uses: ./.github/actions/privateaction
 
     - name: Testing siesta
