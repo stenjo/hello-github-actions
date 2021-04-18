@@ -11,4 +11,4 @@ jobs:
         pwd
         ls -al
     - name: Testing sencha install
-      run: sencha --help
+      run: sencha
