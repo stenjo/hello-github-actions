@@ -16,7 +16,7 @@ jobs:
         path: .github/actions
 
     - run: ls -al .github/actions
-    - uses: ./.github/actions/privateaction
+    - uses: .github/actions
 
     - name: Testing siesta
       run: puppeteer
