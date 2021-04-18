@@ -7,11 +7,12 @@ jobs:
     steps:
     - uses: stenjo/sencha-cmd@v1
     - uses: actions/checkout@v2
+    
     - name: Get siesta
       uses: actions/checkout@v2
       with:
         repository: stenjo/privateaction
-        token: ${{ secrets.REPO_TOKEN}}
+        token: ${{ secrets.REPO_KEY }}
         path: .gihub/actions
 
     - uses: ./.github/actions/privateaction
