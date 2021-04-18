@@ -11,4 +11,4 @@ jobs:
         pwd
         ls -al
     - name: Testing sencha install
-      run: sencha web -p 8080 start
+      run: sencha web -p 8080 start &
